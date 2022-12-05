@@ -1,0 +1,662 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_poolRegistry",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "NATIVE",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "TO_SIX_DECIMAL",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllConfiguredPool",
+    "outputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "",
+        "type": "uint256[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllPoolsData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "components": [
+                  {
+                    "internalType": "address",
+                    "name": "poolCreator",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "baseToken",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "globalConfig",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "savingAccount",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "bank",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "accounts",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "tokenRegistry",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "claim",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "address",
+                    "name": "fixedPriceOracle",
+                    "type": "address"
+                  },
+                  {
+                    "internalType": "uint8",
+                    "name": "poolStatus",
+                    "type": "uint8"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "maturesOn",
+                    "type": "uint256"
+                  },
+                  {
+                    "internalType": "uint256",
+                    "name": "poolCreatorTotalCollateral",
+                    "type": "uint256"
+                  }
+                ],
+                "internalType": "struct PoolDataHelper.PoolInfo",
+                "name": "poolInfo",
+                "type": "tuple"
+              },
+              {
+                "components": [
+                  {
+                    "internalType": "address[]",
+                    "name": "tokens",
+                    "type": "address[]"
+                  },
+                  {
+                    "internalType": "uint8[]",
+                    "name": "index",
+                    "type": "uint8[]"
+                  },
+                  {
+                    "internalType": "uint8[]",
+                    "name": "decimals",
+                    "type": "uint8[]"
+                  },
+                  {
+                    "internalType": "bool[]",
+                    "name": "enabled",
+                    "type": "bool[]"
+                  },
+                  {
+                    "internalType": "bool[]",
+                    "name": "isSupportedOnCompound",
+                    "type": "bool[]"
+                  },
+                  {
+                    "internalType": "address[]",
+                    "name": "cToken",
+                    "type": "address[]"
+                  },
+                  {
+                    "internalType": "address[]",
+                    "name": "chainLinkOracle",
+                    "type": "address[]"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "borrowLTV",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "price",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "depositMiningSpeed",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "borrowMiningSpeed",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "totalDeposit",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "totalLoans",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "totalReserve",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "totalCompound",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "borrowRatePerBlock",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "depositRatePerBlock",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "depositMiningAPR",
+                    "type": "uint256[]"
+                  },
+                  {
+                    "internalType": "uint256[]",
+                    "name": "borrowMiningAPR",
+                    "type": "uint256[]"
+                  }
+                ],
+                "internalType": "struct PoolDataHelper.PoolTokenInfo",
+                "name": "poolTokenInfo",
+                "type": "tuple"
+              }
+            ],
+            "internalType": "struct PoolDataHelper.PoolData[]",
+            "name": "poolDataArr",
+            "type": "tuple[]"
+          }
+        ],
+        "internalType": "struct PoolDataHelper.AllPoolsData",
+        "name": "allPoolsData",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_poolId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPoolData",
+    "outputs": [
+      {
+        "components": [
+          {
+            "components": [
+              {
+                "internalType": "address",
+                "name": "poolCreator",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "baseToken",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "globalConfig",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "savingAccount",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "bank",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "accounts",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "tokenRegistry",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "claim",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "fixedPriceOracle",
+                "type": "address"
+              },
+              {
+                "internalType": "uint8",
+                "name": "poolStatus",
+                "type": "uint8"
+              },
+              {
+                "internalType": "uint256",
+                "name": "maturesOn",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "poolCreatorTotalCollateral",
+                "type": "uint256"
+              }
+            ],
+            "internalType": "struct PoolDataHelper.PoolInfo",
+            "name": "poolInfo",
+            "type": "tuple"
+          },
+          {
+            "components": [
+              {
+                "internalType": "address[]",
+                "name": "tokens",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint8[]",
+                "name": "index",
+                "type": "uint8[]"
+              },
+              {
+                "internalType": "uint8[]",
+                "name": "decimals",
+                "type": "uint8[]"
+              },
+              {
+                "internalType": "bool[]",
+                "name": "enabled",
+                "type": "bool[]"
+              },
+              {
+                "internalType": "bool[]",
+                "name": "isSupportedOnCompound",
+                "type": "bool[]"
+              },
+              {
+                "internalType": "address[]",
+                "name": "cToken",
+                "type": "address[]"
+              },
+              {
+                "internalType": "address[]",
+                "name": "chainLinkOracle",
+                "type": "address[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "borrowLTV",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "price",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "depositMiningSpeed",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "borrowMiningSpeed",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "totalDeposit",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "totalLoans",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "totalReserve",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "totalCompound",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "borrowRatePerBlock",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "depositRatePerBlock",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "depositMiningAPR",
+                "type": "uint256[]"
+              },
+              {
+                "internalType": "uint256[]",
+                "name": "borrowMiningAPR",
+                "type": "uint256[]"
+              }
+            ],
+            "internalType": "struct PoolDataHelper.PoolTokenInfo",
+            "name": "poolTokenInfo",
+            "type": "tuple"
+          }
+        ],
+        "internalType": "struct PoolDataHelper.PoolData",
+        "name": "poolData",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_poolId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPoolInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "poolCreator",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "baseToken",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "globalConfig",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "savingAccount",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "bank",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "accounts",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "tokenRegistry",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "claim",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "fixedPriceOracle",
+            "type": "address"
+          },
+          {
+            "internalType": "uint8",
+            "name": "poolStatus",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "maturesOn",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "poolCreatorTotalCollateral",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct PoolDataHelper.PoolInfo",
+        "name": "pi",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_poolId",
+        "type": "uint256"
+      }
+    ],
+    "name": "getPoolTokenInfo",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "tokens",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint8[]",
+            "name": "index",
+            "type": "uint8[]"
+          },
+          {
+            "internalType": "uint8[]",
+            "name": "decimals",
+            "type": "uint8[]"
+          },
+          {
+            "internalType": "bool[]",
+            "name": "enabled",
+            "type": "bool[]"
+          },
+          {
+            "internalType": "bool[]",
+            "name": "isSupportedOnCompound",
+            "type": "bool[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "cToken",
+            "type": "address[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "chainLinkOracle",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "borrowLTV",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "price",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "depositMiningSpeed",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "borrowMiningSpeed",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "totalDeposit",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "totalLoans",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "totalReserve",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "totalCompound",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "borrowRatePerBlock",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "depositRatePerBlock",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "depositMiningAPR",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "borrowMiningAPR",
+            "type": "uint256[]"
+          }
+        ],
+        "internalType": "struct PoolDataHelper.PoolTokenInfo",
+        "name": "pti",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[]",
+        "name": "_poolIds",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "getPoolsStatus",
+    "outputs": [
+      {
+        "internalType": "uint8[]",
+        "name": "res",
+        "type": "uint8[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "poolRegistry",
+    "outputs": [
+      {
+        "internalType": "contract IPoolRegistry",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

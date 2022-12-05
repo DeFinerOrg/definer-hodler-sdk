@@ -1,0 +1,8 @@
+{
+  "poolDataHelper": [
+    { "chainId": 1, "address": "0xE424D703e6b4A6E4161794108646121C77a2aBd2" },
+    { "chainId": 66, "address": "0x1bB442804E9AFabB307f1B0600f84dD546d325A8" },
+    { "chainId": 137, "address": "0xb0f42d27951F85267Cf57997da07d36de8b96A8D" },
+    { "chainId": 56, "address": "0x86630fdd546B6B11c542D8A4Ee3937f646b27CE8" }
+  ]
+}
