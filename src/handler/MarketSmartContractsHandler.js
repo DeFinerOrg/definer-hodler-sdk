@@ -69,7 +69,6 @@ export class MarketSmartContractsHandler {
    * @returns
    */
   call(scName, scMethodName, sendData = {}, ...args) {
-    console.log("call", scName, scMethodName, sendData, ...args);
     const smartContractInstance = this.#marketSCMap.get(scName);
     return smartContractInstance.methods[scMethodName](...args).call({
       from: this.getCurrentAccount(),
