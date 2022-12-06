@@ -1,4 +1,4 @@
-# definer-hodler.js - Definer Hodler Marktet javaScript API
+# definer-hodler.js - Definer Hodler Market SDK
 
 Javascript SDK for definer-hodler-js
 
