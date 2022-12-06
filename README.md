@@ -1,28 +1,28 @@
 # definer-hodler.js - Definer Hodler Market SDK
 
-Javascript SDK for definer-hodler-js
+Javascript SDK for definer-hodler
 
 ## Overview
 
-This hodler market provides a utility to read the HODLer market's data.
+This npm package provides a utilities to read the HODLer market's data and also utilities for transacting with a HODLer market.
 
 ## Installation
 
 ### Node
 
 ```bash
-npm i definer-hodler-js
+npm i @definer-org/definer-hodler
 ```
 
 ### Pure javascript
 
-Use the prebuilt dist/definer-hodler.min.js, or build using the definer-hodler-js repository:
+Use the prebuilt dist/definer-hodler.min.js, or build using the definer-hodler-sdk git repository.
 
 ```bash
 npm run build
 ```
 
-Then include dist/definer-hodler.min.js in your html file. This will expose MarketDataReader, MarketTransManager and CHAINS object.
+Include dist/definer-hodler.min.js in your html file. This will expose MarketDataReaderFactory, MarketTransManagerFactory and CHAINS object.
 
 ```html
 <script src="https://domain-name.com/definer-hodler.min.js"></script>
@@ -30,7 +30,7 @@ Then include dist/definer-hodler.min.js in your html file. This will expose Mark
 
 ## Usage
 
-This SDK exports the class: MarketDataReaderFactory, the class: MarketTransManagerFactory, and the object: CHAINS.
+This npm package exports the class: MarketDataReaderFactory, the class: MarketTransManagerFactory, and the object: CHAINS that are essential for interacting with the smart contracts for a given hodler market.
 
 ```js
 //In Node.js
@@ -116,7 +116,7 @@ Note: For better performance the HODLer market data is fetched only once from th
 
 ## Documentation
 
-Documentation can be found at [ReadTheDocs][docs].
+Documentation can be found at [docs](https://definer.gitbook.io/definer/definer-hodler-sdk).
 
 ## Building
 
