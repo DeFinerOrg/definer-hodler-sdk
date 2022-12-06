@@ -49,9 +49,9 @@ import {
     2,
     web3Obj
   );
-  const stakingAPR = await readerObj.getMarketBaseTokenStakingAPR();
-  const depositMiningAPR = await readerObj.getMarketBaseTokenDepositMiningAPR();
-  const totalDeposit = await readerObj.getMarketBaseTokenTotalDeposit();
+  const stakingAPR = readerObj.getMarketBaseTokenStakingAPR();
+  const depositMiningAPR = readerObj.getMarketBaseTokenDepositMiningAPR();
+  const totalDeposit = readerObj.getMarketBaseTokenTotalDeposit();
   //TransManager
   const account_pkey = "ACCOUNT_KEY";
   const account = web3Obj.eth.accounts.privateKeyToAccount(account_pkey);
@@ -85,10 +85,10 @@ import {
           2,
           web3Obj
         );
-      const stakingAPR = await readerObj.getMarketBaseTokenStakingAPR();
+      const stakingAPR = readerObj.getMarketBaseTokenStakingAPR();
       const depositMiningAPR =
         await readerObj.getMarketBaseTokenDepositMiningAPR();
-      const totalDeposit = await readerObj.getMarketBaseTokenTotalDeposit();
+      const totalDeposit = readerObj.getMarketBaseTokenTotalDeposit();
       //TransManager
       const account_pkey = "ACCOUNT_KEY";
       const account = web3Obj.eth.accounts.privateKeyToAccount(account_pkey);
