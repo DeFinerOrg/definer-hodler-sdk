@@ -1,6 +1,6 @@
 {
   "name": "@definer-org/definer-hodler",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Definer HODLer market SDK",
   "license": "MIT",
   "engines": {
