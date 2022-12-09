@@ -116,7 +116,7 @@ Note: For better performance the HODLer market data is fetched only once from th
 
 ## Documentation
 
-Documentation can be found at [docs](https://definer.gitbook.io/definer/definer-hodler-sdk).
+Documentation can be found at [docs](https://docs.definer.org/definer-hodler-sdk).
 
 ## Building
 
